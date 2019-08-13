@@ -1,0 +1,12 @@
+<div class="row">
+  <button (click)="logout()" class="btn btn-secondary">Logout</button>
+  <button (click)="load()" class="btn btn-secondary">Load</button>
+  <button (click)="loadSecure()" class="btn btn-secondary">Load Secure</button>
+  <button (click)="loadDelay()" class="btn btn-secondary">Load Delay</button>
+  <button (click)="loadUser()" class="btn btn-secondary">Load User</button>
+</div>
+<div class="row">
+  {{data | json}}
+</div>
+<div>{{name | upper}}</div>
+<app-log></app-log>
